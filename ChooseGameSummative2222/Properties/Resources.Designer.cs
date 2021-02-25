@@ -73,6 +73,15 @@ namespace ChooseGameSummative2222.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Changbin3Endings {
+            get {
+                return ResourceManager.GetStream("Changbin3Endings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
         internal static System.IO.UnmanagedMemoryStream ChangbinStart {
             get {
                 return ResourceManager.GetStream("ChangbinStart", resourceCulture);
@@ -86,6 +95,15 @@ namespace ChooseGameSummative2222.Properties {
             get {
                 object obj = ResourceManager.GetObject("Chris_titlescreen", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream ChrisContinue {
+            get {
+                return ResourceManager.GetStream("ChrisContinue", resourceCulture);
             }
         }
         

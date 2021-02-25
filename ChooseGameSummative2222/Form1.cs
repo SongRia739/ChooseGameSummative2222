@@ -131,6 +131,8 @@ namespace ChooseGameSummative2222
                     diamondLabel.Text = "";
                     break;
                 case 6:
+                    SoundPlayer chrisContinue = new SoundPlayer(Properties.Resources.ChrisContinue);
+                    chrisContinue.Play();
                     textLabel.Text = "His smile grows wider as he invites you out for lunch. You agree because duh, who wouldn't? The two of you walk off campus and end up between two shops. ";
                     heartLabel.Text = "The sushi place";
                     starLabel.Text = "McDonalds";
@@ -205,6 +207,8 @@ namespace ChooseGameSummative2222
                     diamondLabel.Text = "You kiss him on the cheek";
                     break;
                 case 16:
+                    SoundPlayer changbinEndings = new SoundPlayer(Properties.Resources.Changbin3Endings);
+                    changbinEndings.Play();
                     textLabel.Text = "You quietly interlace your fingers together and to your shock, he shyly squeezes your hand. 'This wasn't what I had in mind.' You mumble as he looks at you curiously. 'What did you have in mind then?'";
                     heartLabel.Text = "Kiss him";
                     starLabel.Text = "'I was thinking we could actually do something'";

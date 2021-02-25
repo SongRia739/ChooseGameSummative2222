@@ -119,5 +119,11 @@
   <ItemGroup>
     <None Include="Resources\469422__ddmyzik__highway-freedom-loop.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\320603__lemoncreme__ambient-piano-music-4.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\372005__tranquility-jadgroup__beautiful-violin-music.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
