@@ -113,5 +113,11 @@
   <ItemGroup>
     <None Include="Resources\252798__oymaldonado__movie-score-classical-music-loop-part-1.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\528773__mrthenoronha__classical-waltz-loop.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\469422__ddmyzik__highway-freedom-loop.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

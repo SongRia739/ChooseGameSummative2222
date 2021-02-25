@@ -107,12 +107,16 @@ namespace ChooseGameSummative2222
                     diamondLabel.Text = "";
                     break;
                 case 3:
+                    SoundPlayer chrisStart = new SoundPlayer(Properties.Resources.ChrisStart);
+                    chrisStart.Play();
                     textLabel.Text = "Chris notices you and quickly gathers up his things before jogging up to you. He asks if you're busy, are you?";
                     heartLabel.Text = "Yes";
                     starLabel.Text = "No!";
                     diamondLabel.Text = "";
                     break;
                 case 4:
+                    SoundPlayer changbinStart = new SoundPlayer(Properties.Resources.ChangbinStart);
+                    changbinStart.Play();
                     textLabel.Text = "You shyly approach him and ask if he want's to hang out with you. He scoffs but says yes anyway. Strange he agreed so fast but you think nothing of it. You hear whispers as the two of you get off campus. They call you his next use and throw lover. What do you do?";
                     heartLabel.Text = "Roll your eyes and glare at them ";
                     starLabel.Text = "Shamefully lower your head even though it isn't true";
