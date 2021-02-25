@@ -61,6 +61,35 @@ namespace ChooseGameSummative2222.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Changbin_titlescreen {
+            get {
+                object obj = ResourceManager.GetObject("Changbin_titlescreen", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Chris_titlescreen {
+            get {
+                object obj = ResourceManager.GetObject("Chris_titlescreen", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream classical {
+            get {
+                return ResourceManager.GetStream("classical", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
         internal static System.IO.UnmanagedMemoryStream gameover {
@@ -111,6 +140,16 @@ namespace ChooseGameSummative2222.Properties {
         internal static System.IO.UnmanagedMemoryStream rock {
             get {
                 return ResourceManager.GetStream("rock", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Unicampus {
+            get {
+                object obj = ResourceManager.GetObject("Unicampus", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }

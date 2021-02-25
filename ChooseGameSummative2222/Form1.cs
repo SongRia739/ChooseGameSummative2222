@@ -82,14 +82,16 @@ namespace ChooseGameSummative2222
                 case 0:
                     SoundPlayer opening = new SoundPlayer(Properties.Resources.opening);
                     opening.Play();
+                    sceneImage.BackgroundImage = Properties.Resources.Unicampus;
                     textLabel.Text = "You just got of class at your 3rd year in university. Walking around campus, you notice 2 boys. Which one do you have a crush on? ";
                     heartLabel.Text = "Bang 'Christopher' Chan";
                     starLabel.Text = "Seo Changbin";
                     diamondLabel.Text = "";
                     break;
                 case 1:
-           //         SoundPlayer chrisTheme = new SoundPlayer(Properties.Resources.resturantChatterrr);
-           //         chrisTheme.Play();
+                    SoundPlayer chrisTheme = new SoundPlayer(Properties.Resources.classical);
+                    chrisTheme.Play();
+                    sceneImage.BackgroundImage = Properties.Resources.Chris_titlescreen;
                     textLabel.Text = "Bang 'Christopher' Chan- Very popular, extremely nice, friends with basically everyone on campus and a bussniss major. Do you like him?";
                     heartLabel.Text = "Yes";
                     starLabel.Text = "No, not my type";
@@ -98,6 +100,7 @@ namespace ChooseGameSummative2222
                 case 2:
                     SoundPlayer changbinTheme = new SoundPlayer(Properties.Resources.rock);
                     changbinTheme.Play();
+                    sceneImage.BackgroundImage = Properties.Resources.Changbin_titlescreen;
                     textLabel.Text = "Seo Changbin- everyone knows him, bad boy persona, player, and is here on a sports scholarship. Do you like him?";
                     heartLabel.Text = "Yes";
                     starLabel.Text = "No, not my type";

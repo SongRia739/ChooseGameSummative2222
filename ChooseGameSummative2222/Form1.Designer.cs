@@ -111,10 +111,12 @@
             this.textLabel.Name = "textLabel";
             this.textLabel.Size = new System.Drawing.Size(253, 200);
             this.textLabel.TabIndex = 12;
+            this.textLabel.Text = "Press the space bar to start!";
             // 
             // sceneImage
             // 
-            this.sceneImage.BackColor = System.Drawing.Color.White;
+            this.sceneImage.BackColor = System.Drawing.Color.Transparent;
+            this.sceneImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.sceneImage.Location = new System.Drawing.Point(12, 12);
             this.sceneImage.Name = "sceneImage";
             this.sceneImage.Size = new System.Drawing.Size(273, 426);

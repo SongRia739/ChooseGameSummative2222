@@ -98,5 +98,20 @@
   <ItemGroup>
     <None Include="Resources\528694__alex-kritov__love2.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chris titlescreen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Changbin titlescreen.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Changbin titlescreen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Unicampus.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\252798__oymaldonado__movie-score-classical-music-loop-part-1.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
