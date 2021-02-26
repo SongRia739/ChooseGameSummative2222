@@ -63,6 +63,26 @@ namespace ChooseGameSummative2222.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap After_Chris_Date {
+            get {
+                object obj = ResourceManager.GetObject("After_Chris_Date", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bad_Ending {
+            get {
+                object obj = ResourceManager.GetObject("Bad_Ending", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Changbin_titlescreen {
             get {
                 object obj = ResourceManager.GetObject("Changbin_titlescreen", resourceCulture);
@@ -85,6 +105,25 @@ namespace ChooseGameSummative2222.Properties {
         internal static System.IO.UnmanagedMemoryStream ChangbinStart {
             get {
                 return ResourceManager.GetStream("ChangbinStart", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Chris_AfterDate {
+            get {
+                return ResourceManager.GetStream("Chris_AfterDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Chris_Smiling {
+            get {
+                object obj = ResourceManager.GetObject("Chris_Smiling", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -135,11 +174,50 @@ namespace ChooseGameSummative2222.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Good_Ending {
+            get {
+                object obj = ResourceManager.GetObject("Good_Ending", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
         internal static System.IO.UnmanagedMemoryStream goodending {
             get {
                 return ResourceManager.GetStream("goodending", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Mcdonalds_Date {
+            get {
+                object obj = ResourceManager.GetObject("Mcdonalds_Date", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Normal_Ending {
+            get {
+                object obj = ResourceManager.GetObject("Normal_Ending", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream NormalEnding {
+            get {
+                return ResourceManager.GetStream("NormalEnding", resourceCulture);
             }
         }
         
@@ -162,6 +240,16 @@ namespace ChooseGameSummative2222.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Resturant_Choice {
+            get {
+                object obj = ResourceManager.GetObject("Resturant_Choice", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
         internal static System.IO.UnmanagedMemoryStream resturantChatterrr {
@@ -176,6 +264,16 @@ namespace ChooseGameSummative2222.Properties {
         internal static System.IO.UnmanagedMemoryStream rock {
             get {
                 return ResourceManager.GetStream("rock", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Sushi_Date {
+            get {
+                object obj = ResourceManager.GetObject("Sushi_Date", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         

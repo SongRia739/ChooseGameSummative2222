@@ -54,6 +54,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\Resource1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -67,6 +72,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Resources\Resource1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -81,6 +90,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Normal Ending" />
     <None Include="Resources\resturantChatterrr.wav" />
   </ItemGroup>
   <ItemGroup>
@@ -124,6 +134,42 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\372005__tranquility-jadgroup__beautiful-violin-music.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\53a0a15a97218abc3fb514b1b1cccd61.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bad Ending.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5fe09ceedc356439948b781a6f68a3d158f78668_hq.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\00fe0760ac5146d36b85653299beb938.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo-1543872084-c7bd3822856f.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7598977.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\http___cdn.cnn.com_cnnnext_dam_assets_131118121911-shopping-cities---seoul.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mcdonalds_Date.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\128739__pabloencalada__city-street.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\413144__klankbeeld__far-train-city-night-171202-1241.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\473971__chris-schum__neutraal-mixdown.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\469419__ddmyzik__electronic-info-loop.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

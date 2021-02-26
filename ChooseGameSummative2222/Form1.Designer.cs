@@ -79,18 +79,18 @@
             // diamondLabel
             // 
             this.diamondLabel.ForeColor = System.Drawing.Color.Black;
-            this.diamondLabel.Location = new System.Drawing.Point(380, 397);
+            this.diamondLabel.Location = new System.Drawing.Point(380, 387);
             this.diamondLabel.Name = "diamondLabel";
-            this.diamondLabel.Size = new System.Drawing.Size(194, 23);
+            this.diamondLabel.Size = new System.Drawing.Size(194, 33);
             this.diamondLabel.TabIndex = 15;
             this.diamondLabel.Text = "Space Key";
             // 
             // starLabel
             // 
             this.starLabel.ForeColor = System.Drawing.Color.Black;
-            this.starLabel.Location = new System.Drawing.Point(377, 334);
+            this.starLabel.Location = new System.Drawing.Point(377, 326);
             this.starLabel.Name = "starLabel";
-            this.starLabel.Size = new System.Drawing.Size(194, 23);
+            this.starLabel.Size = new System.Drawing.Size(194, 31);
             this.starLabel.TabIndex = 14;
             this.starLabel.Text = "N key";
             // 
@@ -98,9 +98,9 @@
             // 
             this.heartLabel.BackColor = System.Drawing.Color.Transparent;
             this.heartLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.heartLabel.Location = new System.Drawing.Point(377, 281);
+            this.heartLabel.Location = new System.Drawing.Point(377, 271);
             this.heartLabel.Name = "heartLabel";
-            this.heartLabel.Size = new System.Drawing.Size(197, 23);
+            this.heartLabel.Size = new System.Drawing.Size(197, 33);
             this.heartLabel.TabIndex = 13;
             this.heartLabel.Text = "M key";
             // 
