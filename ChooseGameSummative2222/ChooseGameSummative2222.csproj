@@ -177,5 +177,11 @@
   <ItemGroup>
     <None Include="Resources\city-park.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\506893__mrthenoronha__upbeat-theme-loop.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stray-kids-profile-changbin-2-landscape-758x506.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
+using System.Threading;
 
 namespace ChooseGameSummative2222
 {
@@ -41,8 +42,13 @@ namespace ChooseGameSummative2222
                 else if (scene == 4) { scene = 7; }
                 else if (scene == 7) { scene = 13; }
                 else if (scene == 12) { scene = 17; }
+                else if (scene == 77) { scene = 99; }
                 else if (scene == 16) { scene = 22; }
+                else if (scene == 22) { scene = 99; }
+                else if (scene == 13) { scene = 99; }
+                else if (scene == 17) { scene = 99; }
                 else if (scene == 99) { scene = 0; }
+                else if (scene == 99) { scene = 100; }
 
             }
             else if (e.KeyCode == Keys.N) //star button press
@@ -69,6 +75,7 @@ namespace ChooseGameSummative2222
                 else if (scene == 9) { scene = 15; }
                 else if (scene == 10) { scene = 15; }
                 else if (scene == 19) { scene = 99; }
+                else if (scene == 99) { scene = 100; }
 
             }
             else if (e.KeyCode == Keys.Space) //diamond button press
@@ -77,38 +84,46 @@ namespace ChooseGameSummative2222
                 else if (scene == 20) { scene = 99; }
                 else if (scene == 16) { scene = 21; }
                 else if (scene == 21) { scene = 99; }
+                else if (scene == 99) { scene = 100; }
             }
 
             /// Display text and game options to screen based on the current scene
             switch (scene)
             {
+                //opening scene
                 case 0:
                     SoundPlayer opening = new SoundPlayer(Properties.Resources.opening);
                     opening.Play();
                     sceneImage.BackgroundImage = Properties.Resources.Unicampus;
-                    textLabel.Text = "You just got of class at your 3rd year in university. Walking around campus, you notice 2 boys. Which one do you have a crush on? ";
+                    textLabel.Text = "You just got of class at your 3rd year in university. Walking around campus, you notice 2 boys. " +
+                        "Which one do you have a crush on? ";
                     heartLabel.Text = "Bang 'Christopher' Chan";
                     starLabel.Text = "Seo Changbin";
                     diamondLabel.Text = "";
                     break;
+                //chris character introduction
                 case 1:
                     SoundPlayer chrisTheme = new SoundPlayer(Properties.Resources.classical);
                     chrisTheme.Play();
                     sceneImage.BackgroundImage = Properties.Resources.Chris_titlescreen;
-                    textLabel.Text = "Bang 'Christopher' Chan- Very popular, extremely nice, friends with basically everyone on campus and a bussniss major. Do you like him?";
+                    textLabel.Text = "Bang 'Christopher' Chan- Very popular, extremely nice, friends with basically everyone on campus and a bussniss major." +
+                        " \n\nDo you like him?";
                     heartLabel.Text = "Yes";
                     starLabel.Text = "No, not my type";
                     diamondLabel.Text = "";
                     break;
+                //changbin character introduction
                 case 2:
                     SoundPlayer changbinTheme = new SoundPlayer(Properties.Resources.rock);
                     changbinTheme.Play();
                     sceneImage.BackgroundImage = Properties.Resources.Changbin_titlescreen;
-                    textLabel.Text = "Seo Changbin- everyone knows him, bad boy persona, player, and is here on a sports scholarship. Do you like him?";
+                    textLabel.Text = "Seo Changbin- everyone knows him, bad boy persona, player, and is here on a sports scholarship." +
+                        " \n\nDo you like him?";
                     heartLabel.Text = "Yes";
                     starLabel.Text = "No, not my type";
                     diamondLabel.Text = "";
                     break;
+                //chris game start
                 case 3:
                     SoundPlayer chrisStart = new SoundPlayer(Properties.Resources.ChrisStart);
                     chrisStart.Play();
@@ -120,10 +135,11 @@ namespace ChooseGameSummative2222
                     starLabel.Text = "No!";
                     diamondLabel.Text = "";
                     break;
+                //changbin game start
                 case 4:
                     SoundPlayer changbinStart = new SoundPlayer(Properties.Resources.ChangbinStart);
                     changbinStart.Play();
-
+                    sceneImage.BackgroundImage = Properties.Resources.Changbin_Looking_Mean;
                     textLabel.Text = "You shyly approach him and ask if he want's to hang out with you." +
                         " He scoffs but says yes anyway. Strange he agreed so fast but you think nothing of it." +
                         " You hear whispers as the two of you get off campus. They call you his next use and throw lover." +
@@ -132,6 +148,7 @@ namespace ChooseGameSummative2222
                     starLabel.Text = "Shamefully lower your head even \nthough it isn't true";
                     diamondLabel.Text = "";
                     break;
+                //chris bad ending 1
                 case 5:
                      SoundPlayer gameOver = new SoundPlayer(Properties.Resources.gameover);
                      gameOver.Play();
@@ -141,6 +158,7 @@ namespace ChooseGameSummative2222
                     starLabel.Text = "";
                     diamondLabel.Text = "";
                     break;
+                //chris good path 1
                 case 6:
                     SoundPlayer chrisContinue = new SoundPlayer(Properties.Resources.ChrisContinue);
                     chrisContinue.Play();
@@ -151,24 +169,28 @@ namespace ChooseGameSummative2222
                     starLabel.Text = "McDonalds";
                     diamondLabel.Text = "";
                     break;
+                //changbin good path 1
                 case 7:
-
-
+                    SoundPlayer changbinContinues = new SoundPlayer(Properties.Resources.Changbin_Continue);
+                    changbinContinues.Play();
                     sceneImage.BackgroundImage = Properties.Resources.City_Park;
-                    textLabel.Text = "Changbin smirks and stands a little closer to you, the walking eventually leads you guys to a nearby park. He sits down by a nearby tree but he accidently sits on something spiky and lets out a girlish scream";
+                    textLabel.Text = "Changbin smirks and stands a little closer to you, the walking eventually leads you guys to a nearby park." +
+                        " He sits down by a nearby tree but he accidently sits on something spiky and lets out a girlish scream";
                     heartLabel.Text = "Pretend you didn't see anything";
                     starLabel.Text = "Laugh";
                     diamondLabel.Text = "";
                     break;
+                //changbin bad ending 1
                 case 8:
                     SoundPlayer gameOver2 = new SoundPlayer(Properties.Resources.gameover);
                     gameOver2.Play();
                     sceneImage.BackgroundImage = Properties.Resources.Bad_Ending;
                     textLabel.Text = "Changbin thinks you have no backbone and ditches you at the entrance ";
                     heartLabel.Text = "";
-                    starLabel.Text = "";
+                    starLabel.Text = "Press N to continue";
                     diamondLabel.Text = "";
                     break;
+                //chris good path 2
                 case 9:
                     SoundPlayer resturant1 = new SoundPlayer(Properties.Resources.resturantChatterrr);
                     resturant1.Play();
@@ -179,6 +201,7 @@ namespace ChooseGameSummative2222
                     starLabel.Text = "Immediately bring out your walet";
                     diamondLabel.Text = "";
                     break;
+                //chris normal path
                 case 10:
                     SoundPlayer resturant2 = new SoundPlayer(Properties.Resources.resturantChatterrr);
                     resturant2.Play();
@@ -189,6 +212,7 @@ namespace ChooseGameSummative2222
                     starLabel.Text = "Immediately bring out your walet";
                     diamondLabel.Text = "";
                     break;
+                //chris bad ending 2
                 case 11:
                     SoundPlayer gameOver3 = new SoundPlayer(Properties.Resources.gameover);
                     gameOver3.Play();
@@ -199,26 +223,30 @@ namespace ChooseGameSummative2222
                     starLabel.Text = "Press N key to continue";
                     diamondLabel.Text = "";
                     break;
+                //changbin good path 2
                 case 12:
                     SoundPlayer park = new SoundPlayer(Properties.Resources.park);
                     park.Play();
                     sceneImage.BackgroundImage = Properties.Resources.Park_Date;
-                    textLabel.Text = "He goes to glare at you but its immediately gone when he sees you smiling. You go and sit beside him, this wasn't what you exactly had in mind but it still works." +
+                    textLabel.Text = "He goes to glare at you but its immediately gone when he sees you smiling. You go and sit beside him," +
+                        " this wasn't what you exactly had in mind but it still works." +
                         " Your bodies are oddly close and your heart is drumming in your chest. \n\nYou...";
                     heartLabel.Text = "...do nothing";
                     starLabel.Text = "...hold Changbin's hand";
                     diamondLabel.Text = "";
                     break;
+                //changbin bad ending 2
                 case 13:
                     SoundPlayer gameOver4 = new SoundPlayer(Properties.Resources.gameover);
                     gameOver4.Play();
                     sceneImage.BackgroundImage = Properties.Resources.Bad_Ending;
                     textLabel.Text = "He thinks you're mocking him and ends up complaining " +
                         "about how he should not have agreed to come.";
-                    heartLabel.Text = "";
+                    heartLabel.Text = "Press M to continue";
                     starLabel.Text = "";
                     diamondLabel.Text = "";
                     break;
+                //chris bad ending 3
                 case 14:
                     SoundPlayer gameOver5 = new SoundPlayer(Properties.Resources.gameover);
                     gameOver5.Play();
@@ -228,6 +256,7 @@ namespace ChooseGameSummative2222
                     starLabel.Text = "";
                     diamondLabel.Text = "";
                     break;
+                //chris three endings
                 case 15:
                     SoundPlayer chrisAfterDate = new SoundPlayer(Properties.Resources.Chris_AfterDate);
                     chrisAfterDate.Play();
@@ -238,6 +267,7 @@ namespace ChooseGameSummative2222
                     starLabel.Text = "You ask for his number";
                     diamondLabel.Text = "You kiss him on the cheek";
                     break;
+                //changbin 3 endings
                 case 16:
                     SoundPlayer changbinEndings = new SoundPlayer(Properties.Resources.Changbin3Endings);
                     changbinEndings.Play();
@@ -248,15 +278,18 @@ namespace ChooseGameSummative2222
                     starLabel.Text = "'I was thinking we could actually do something'";
                     diamondLabel.Text = "'Oh nothing, nevermind'";
                     break;
+                //changbin bad ending 3
                 case 17:
                     SoundPlayer gameOver6 = new SoundPlayer(Properties.Resources.gameover);
                     gameOver6.Play();
                     sceneImage.BackgroundImage = Properties.Resources.Bad_Ending;
-                    textLabel.Text = "You two sit in silence as other people walk by. The day ends quickly and you guys never speak again, what a nightmare that was.";
-                    heartLabel.Text = "";
+                    textLabel.Text = "You two sit in silence as other people walk by. The day ends quickly and you guys never speak again, " +
+                        "what a nightmare that was.";
+                    heartLabel.Text = "Press M to continue";
                     starLabel.Text = "";
                     diamondLabel.Text = "";
                     break;
+                //chris bad ending 4
                 case 18:
                     SoundPlayer gameOver7 = new SoundPlayer(Properties.Resources.gameover);
                     gameOver7.Play();
@@ -266,6 +299,7 @@ namespace ChooseGameSummative2222
                     starLabel.Text = "";
                     diamondLabel.Text = "";
                     break;
+                //chris normal ending
                 case 19:
                     SoundPlayer normalEnding = new SoundPlayer(Properties.Resources.NormalEnding);
                     normalEnding.Play();
@@ -275,6 +309,7 @@ namespace ChooseGameSummative2222
                     starLabel.Text = "Press N to continue";
                     diamondLabel.Text = "";
                     break;
+                //chris good ending
                 case 20:
                     SoundPlayer goodEnding = new SoundPlayer(Properties.Resources.goodending);
                     goodEnding.Play();
@@ -284,6 +319,7 @@ namespace ChooseGameSummative2222
                     starLabel.Text = "";
                     diamondLabel.Text = "Press the Space Bar to continue";
                     break;
+                //changbin normal ending
                 case 21:
                     SoundPlayer normalEnding2 = new SoundPlayer(Properties.Resources.NormalEnding);
                     normalEnding2.Play();
@@ -293,32 +329,42 @@ namespace ChooseGameSummative2222
                     starLabel.Text = "";
                     diamondLabel.Text = "Press the Space Bar to continue";
                     break;
+                //changbin good ending
                 case 22:
                     SoundPlayer goodEnding2 = new SoundPlayer(Properties.Resources.goodending);
                     goodEnding2.Play();
                     sceneImage.BackgroundImage = Properties.Resources.Good_Ending;
-                    textLabel.Text = "You lean over and shyly kiss his cheek. Changbin's face turned a dark shade of red, what a strange start to the relationship.";
-                    heartLabel.Text = "";
+                    textLabel.Text = "You lean over and shyly kiss his cheek. Changbin's face turned a dark shade of red, " +
+                        "what a strange start to the relationship.";
+                    heartLabel.Text = "Press M to continue";
                     starLabel.Text = "";
                     diamondLabel.Text = "";
                     break;
+                //changbin bad ending 4
                 case 23:
                     SoundPlayer gameOver10 = new SoundPlayer(Properties.Resources.gameover);
                     gameOver10.Play();
                     sceneImage.BackgroundImage = Properties.Resources.Bad_Ending;
-                    textLabel.Text = "Changbin frowns. Did you not like hanging out with him? You unintentionally left a bad impression and he resents you now.";
+                    textLabel.Text = "Changbin frowns. Did you not like hanging out with him? You unintentionally left a " +
+                        "bad impression and he resents you now.";
                     heartLabel.Text = "";
-                    starLabel.Text = "";
+                    starLabel.Text = "Press N to continue";
                     diamondLabel.Text = "";
                     break;
-
+                //play again menu
                 case 99:
                     textLabel.Text = "Play again?";
                     heartLabel.Text = "Yes";
                     starLabel.Text = "No";
                     diamondLabel.Text = "";
                     break;
-
+                //end game
+                case 100:
+                    textLabel.Text = "Thanks for playing!";
+                    Refresh();
+                    Thread.Sleep(2000);
+                    Application.Exit();
+                    break;
                 default:
                     break;
             }
