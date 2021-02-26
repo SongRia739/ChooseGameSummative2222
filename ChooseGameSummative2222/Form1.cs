@@ -154,7 +154,7 @@ namespace ChooseGameSummative2222
                 case 7:
 
 
-
+                    sceneImage.BackgroundImage = Properties.Resources.City_Park;
                     textLabel.Text = "Changbin smirks and stands a little closer to you, the walking eventually leads you guys to a nearby park. He sits down by a nearby tree but he accidently sits on something spiky and lets out a girlish scream";
                     heartLabel.Text = "Pretend you didn't see anything";
                     starLabel.Text = "Laugh";
@@ -202,10 +202,11 @@ namespace ChooseGameSummative2222
                 case 12:
                     SoundPlayer park = new SoundPlayer(Properties.Resources.park);
                     park.Play();
-
-                    textLabel.Text = "He goes to glare at you but its immediately gone when he sees you smiling. You go and sit beside him, this wasn't what you exactly had in mind but it still works. Your bodies are oddly close and your heart is drumming in your chest";
-                    heartLabel.Text = "Do nothing";
-                    starLabel.Text = "Hold Changbin's hand";
+                    sceneImage.BackgroundImage = Properties.Resources.Park_Date;
+                    textLabel.Text = "He goes to glare at you but its immediately gone when he sees you smiling. You go and sit beside him, this wasn't what you exactly had in mind but it still works." +
+                        " Your bodies are oddly close and your heart is drumming in your chest. \n\nYou...";
+                    heartLabel.Text = "...do nothing";
+                    starLabel.Text = "...hold Changbin's hand";
                     diamondLabel.Text = "";
                     break;
                 case 13:
@@ -240,8 +241,9 @@ namespace ChooseGameSummative2222
                 case 16:
                     SoundPlayer changbinEndings = new SoundPlayer(Properties.Resources.Changbin3Endings);
                     changbinEndings.Play();
-
-                    textLabel.Text = "You quietly interlace your fingers together and to your shock, he shyly squeezes your hand. 'This wasn't what I had in mind.' You mumble as he looks at you curiously. 'What did you have in mind then?'";
+                  
+                    textLabel.Text = "You quietly interlace your fingers together and to your shock, he shyly squeezes your hand. " +
+                        "'This wasn't what I had in mind.' You mumble as he looks at you curiously. 'What did you have in mind then?'";
                     heartLabel.Text = "Kiss him";
                     starLabel.Text = "'I was thinking we could actually do something'";
                     diamondLabel.Text = "'Oh nothing, nevermind'";
@@ -289,7 +291,7 @@ namespace ChooseGameSummative2222
                     textLabel.Text = "Changbin shrugs as you two go back to sitting in silence. You chickened out";
                     heartLabel.Text = "";
                     starLabel.Text = "";
-                    diamondLabel.Text = "";
+                    diamondLabel.Text = "Press the Space Bar to continue";
                     break;
                 case 22:
                     SoundPlayer goodEnding2 = new SoundPlayer(Properties.Resources.goodending);
@@ -321,6 +323,5 @@ namespace ChooseGameSummative2222
                     break;
             }
         }
-
     }
 }

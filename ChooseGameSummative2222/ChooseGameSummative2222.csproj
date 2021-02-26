@@ -171,5 +171,11 @@
   <ItemGroup>
     <None Include="Resources\469419__ddmyzik__electronic-info-loop.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aa7bb97ddfce4290b7003af7d35c339f.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\city-park.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -156,6 +156,16 @@ namespace ChooseGameSummative2222.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap City_Park {
+            get {
+                object obj = ResourceManager.GetObject("City_Park", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
         internal static System.IO.UnmanagedMemoryStream classical {
@@ -236,6 +246,16 @@ namespace ChooseGameSummative2222.Properties {
         internal static System.IO.UnmanagedMemoryStream park {
             get {
                 return ResourceManager.GetStream("park", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Park_Date {
+            get {
+                object obj = ResourceManager.GetObject("Park_Date", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
